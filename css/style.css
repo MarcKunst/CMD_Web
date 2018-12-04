@@ -26,10 +26,9 @@ header>figure>img {
 }
 
 #daily>article {
-    display: flex;
-    flex-flow: column wrap;
     background-color: #ff0;
     height: 100%;
+    position: relative;
 }
 
 h1 {
@@ -37,15 +36,38 @@ h1 {
     font-size: 1.5em;
     position: relative;
     top: 0.5em;
-    left: 0.5em;
+    margin-left: 15px;
 }
 
-#daily>article>a {
+#daily>article>fieldset {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 3em;
+    margin: 0;
+    border: none;
+    padding: 0 15px;
+    box-sizing: border-box;
+    bottom: 15px;
+
+}
+
+#daily>article>fieldset>a {
     background-color: #0f0;
-    padding: 1em 7.5em;
     border-radius: 4px;
-    align-self: center;
-    margin-top: 30%;
+    width: 75%;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+#daily>article>fieldset>button {
+    width: 20%;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
 /*recommended*/
@@ -60,7 +82,7 @@ h2 {
     font-size: 1.2em;
     position: relative;
     top: 0.5em;
-    left: 0.5em;
+    margin-left: 15px;
 }
 
 #recommended>ul {
