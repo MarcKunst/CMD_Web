@@ -159,6 +159,11 @@ h4 {
     border: none;
     background-color: #fff;
     cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.article-thumb>header>button:hover {
+    background-color: #d8f3ff;
 }
 
 .article-thumb>header>button>img {
