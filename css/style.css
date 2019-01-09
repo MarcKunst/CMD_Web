@@ -63,7 +63,7 @@ h4 {
     width: 100vw;
 }
 
-#main-header>figure {
+#main-header>a {
     margin: 0;
     height: 50px;
     position: fixed;
@@ -72,9 +72,10 @@ h4 {
     padding: 0 auto;
     background-color: #fff;
 
+
 }
 
-#main-header>figure>img {
+#main-header>a>img {
     height: 100%;
 }
 
