@@ -67,7 +67,8 @@ h3 {
 header#main-header {
     height: 3.3em;
     background-color: #ffffff;
-    position: sticky; top: 0px;
+    position: sticky;
+    top: 0px;
     z-index: 1;
     width: 100vw;
 }
@@ -203,6 +204,10 @@ article.article-thumb>footer>section>p {
     color: #00477F;
 }
 
+article.article-thumb>footer>button {
+    display: none;
+}
+
 /*recommended*/
 section#recommended {
     height: auto;
@@ -257,6 +262,106 @@ nav>ul>li>a>span {
 /*start media queries*/
 @media (min-width: 600px) {
     body {
-
+        background-color: #a27ba2;
     }
+
+    header#main-header>a {
+        left: 2em;
+        transform: translate(0);
+    }
+
+    section#recommended h2, section#daily h2 {
+        margin: 1.5em 0 0.5em 1.7em;
+        font-size: 1.3em;
+        font-weight: 200;
+        color: #00477F;
+    }
+
+    article.article-thumb {
+        margin: 2em;
+        height: 30vh;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #fff;
+    }
+
+    article.article-thumb>header {
+        height: 100%;
+        width: 50%;
+        border-radius: 0 4px 4px 0;
+        position: relative;
+    }
+
+    article.article-thumb>header>img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 0 4px 4px 0;
+    }
+
+    article.article-thumb>header>button {
+        display: none;
+    }
+
+    article.article-thumb>footer {
+        background-color: #fff;
+        height: 100%;
+        width: 50%;
+        border-radius: 4px 0 0 4px;
+        position: relative;
+    }
+
+    article.article-thumb>footer>section {
+        width: 50%;
+        height: 10%;
+        position: absolute;
+        display: flex;
+        padding-bottom: 0.5em;
+        left: 0.5em;
+        top: 6.2em;
+    }
+
+    article.article-thumb>footer>section>p {
+        white-space: nowrap;
+        line-height: 0em;
+        color: #00477F;
+    }
+
+    article.article-thumb>footer>button {
+        display: block;
+        height: 3.7em;
+        width: 70%;
+        border: none;
+        background-color: #EBEBEC;
+        margin: 0 0 0 1rem;
+        bottom: 2em;
+        position: absolute;
+        border-radius: 4px;
+        font-size: 0.9em;
+        color: #00477F;
+        text-align: left;
+        padding: 0 1rem;
+        transition: background-color 0.5s ease;
+    }
+
+    article.article-thumb>footer>button:hover {
+        background-color: #d8f3ff;
+    }
+
+    article.article-thumb>footer>button>img {
+        height: 45%;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+    h3 {
+        width: 25vw;
+        font-size: 1.2em;
+    }
+
+
+
+
 }
