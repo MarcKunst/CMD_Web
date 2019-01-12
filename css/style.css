@@ -6,7 +6,7 @@ body {
     background-color: #EBEBEC;
 }
 
-#introduction h2{
+section#introduction h2{
     margin: 0;
     padding: 1em 1em;
     font-size: 1em;
@@ -16,12 +16,12 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: 100;
-    background-color: rgba(59, 59, 59, 0.41);
+    background-color: rgba(0, 0, 0, 0.37);
     color: #fff;
     white-space: nowrap;
 }
 
-#surprise h2 {
+section#surprise h2 {
     margin: 0;
     font-size: 1em;
     position: absolute;
@@ -31,6 +31,14 @@ body {
     text-align: center;
     font-weight: 100;
     color: #fff;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #ED1A2D;
+}
+
+section#recommended h2, section#daily h2 {
+    width: 30vw;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #ED1A2D;
 }
 
 h2 {
@@ -50,11 +58,13 @@ h3 {
     color: #00477F;
     top: 0.5em;
     position: absolute;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #ED1A2D;
 }
 
 
 /*header*/
-#main-header {
+header#main-header {
     height: 3.3em;
     background-color: #ffffff;
     position: sticky; top: 0px;
@@ -62,7 +72,7 @@ h3 {
     width: 100vw;
 }
 
-#main-header>a {
+header#main-header>a {
     margin: 0;
     height: 50px;
     position: fixed;
@@ -74,12 +84,12 @@ h3 {
 
 }
 
-#main-header>a>img {
+header#main-header>a>img {
     height: 100%;
 }
 
 /*introduction*/
-#introduction {
+section#introduction {
     position: relative;
     height: 30vh;
     background-image: url(../images/books.jpg);
@@ -91,13 +101,13 @@ h3 {
 }
 
 /*suprise*/
-#surprise {
+section#surprise {
     height: 20vh;
     background-color: #00477F;
     position: relative;
 }
 
-#surprise>a {
+section#surprise>a {
     width: 50%;
     padding: 0.8em 1em;
     text-decoration: none;
@@ -113,17 +123,17 @@ h3 {
     transition: background-color 0.5s ease;
 }
 
-#surprise>a:hover {
+section#surprise>a:hover {
     background-color: #d8f3ff;
 }
 
 /*daily*/
-#daily {
+section#daily {
     height: auto;
     overflow: auto;
 }
 
-.article-thumb {
+article.article-thumb {
     margin: 1em;
     height: 45vh;
     border-radius: 4px;
@@ -131,17 +141,17 @@ h3 {
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.article-thumb:hover {
+article.article-thumb:hover {
   box-shadow: 0 5px 10px rgba(57, 57, 57, 0.25), 0 5px 5px rgba(67, 67, 67, 0.22);
 }
 
-.article-thumb>header {
+article.article-thumb>header {
     height: 55%;
     border-radius: 4px 4px 0 0;
     position: relative;
 }
 
-.article-thumb>header>img {
+article.article-thumb>header>img {
     object-fit: cover;
     object-position: center;
     width: 100%;
@@ -149,7 +159,7 @@ h3 {
     border-radius: 4px 4px 0 0;
 }
 
-.article-thumb>header>button {
+article.article-thumb>header>button {
     width: 2.5rem;
     height: 2.5rem;
     position: absolute;
@@ -162,24 +172,24 @@ h3 {
     transition: background-color 0.5s ease;
 }
 
-.article-thumb>header>button:hover {
+article.article-thumb>header>button:hover {
     background-color: #d8f3ff;
 }
 
-.article-thumb>header>button>img {
+article.article-thumb>header>button>img {
     width: 80%;
 }
 
-.article-thumb>footer {
+article.article-thumb>footer {
     background-color: #fff;
     height: 45%;
     border-radius: 0 0 4px 4px;
     position: relative;
 }
 
-.article-thumb>footer>section {
+article.article-thumb>footer>section {
     width: 52%;
-    height: 25%;
+    height: 20%;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -187,14 +197,14 @@ h3 {
     right: 1em;
 }
 
-.article-thumb>footer>section>p {
+article.article-thumb>footer>section>p {
     white-space: nowrap;
-    line-height: 0.2em;
+    line-height: 0em;
     color: #00477F;
 }
 
 /*recommended*/
-#recommended {
+section#recommended {
     height: auto;
     overflow: auto;
     margin-bottom: 3.5em;
@@ -215,6 +225,7 @@ nav>ul {
     justify-content: space-around;
     padding: 0;
     width: 100vw;
+    margin: 0;
 
 }
 
@@ -222,19 +233,26 @@ nav>ul>li {
     list-style: none;
     width: 25%;
     text-align: center;
+    margin-top: 0.3em;
+    max-height: 100%;
 }
 
 nav>ul>li>a {
     text-decoration: none;
-
 }
 
-/*styling*/
- .underline {
-    padding-bottom: 0.5em;
-    border-bottom: 2px solid #ED1A2D;
+nav>ul>li>a>img {
+    height: 25%;
+    margin-bottom: 0.1em;
 }
 
+nav>ul>li>a>span {
+    display: block;
+    font-size: 0.8em;
+    line-height: 0.2em;
+    color: #ED1A2D;
+    font-weight: 200;
+}
 
 /*start media queries*/
 @media (min-width: 600px) {
