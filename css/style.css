@@ -124,6 +124,13 @@ section#surprise>a {
     transition: background-color 0.5s ease;
 }
 
+section#surprise>a>img {
+    height: 50%;
+    position: absolute;
+    top: 0.8em;
+    right: 1em;
+    }
+
 section#surprise>a:hover {
     background-color: #d8f3ff;
 }
@@ -268,6 +275,31 @@ nav>ul>li>a>span {
     header#main-header>a {
         left: 2em;
         transform: translate(0);
+    }
+
+/*verras me*/
+    section#surprise h2 {
+    font-size: 1.3em;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    transform: translate(0);
+    font-weight: 200;
+    text-align: left;
+    width: 30vw;
+    color: #fff;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #ED1A2D;
+    white-space: nowrap;
+}
+
+    section#surprise>a {
+        top: 7em;
+        left: 2.5em;
+        transform: translate(0);
+        width: 40%;
+        text-align: left;
+
     }
 
     section#recommended h2, section#daily h2 {
