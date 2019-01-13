@@ -41,6 +41,39 @@ section#recommended h2, section#daily h2 {
     border-bottom: 2px solid #ED1A2D;
 }
 
+main {
+    background-color: #fff;
+    width: 100wv;
+    min-height: 100hv;
+    padding: 4.1em 1em 2em 1em;
+}
+
+main>h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    margin-bottom: 1em;
+}
+
+main>i {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+}
+
+main>i>a {
+
+}
+
+main>p {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+main>p>span {
+    font-weight: 600;
+}
+
 h2 {
     margin: 1.5em 0 0.5em 1em;
     font-size: 1.0em;
@@ -65,12 +98,13 @@ h3 {
 
 /*header*/
 header#main-header {
-    height: 3.3em;
+    height: 3.1em;
     background-color: #ffffff;
-    position: sticky;
+    position: fixed;
     top: 0px;
     z-index: 1;
     width: 100vw;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08), 0 10px 10px rgba(0, 0, 0, 0);
 }
 
 header#main-header>a {
@@ -81,12 +115,32 @@ header#main-header>a {
     transform: translate(-50%);
     padding: 0 auto;
     background-color: #fff;
-
-
 }
 
 header#main-header>a>img {
     height: 100%;
+}
+
+header#main-header>button {
+    height: 2.5em;
+    width: 3.1em;
+    top: 0.6em;
+    right: 2em;
+    position: absolute;
+    padding: 0;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+header#main-header>button>img {
+    height: 90%;
+    width: auto;
+}
+
+header#main-header>button>div {
+    text-align: center;
 }
 
 /*introduction*/
@@ -97,7 +151,7 @@ section#introduction {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
+    margin-top: 3.1em;
 
 }
 
@@ -227,7 +281,7 @@ section#recommended {
 nav {
     position: fixed;
     bottom: 0;
-    height: 3.3em;
+    height: 3.1em;
     background-color: #fff;
 
 }
@@ -391,6 +445,16 @@ nav>ul>li>a>span {
     h3 {
         width: 25vw;
         font-size: 1.2em;
+    }
+
+/*verhaal*/
+
+    main {
+        padding: 2em;
+    }
+
+    main>h1 {
+        width: 60%;
     }
 
 
