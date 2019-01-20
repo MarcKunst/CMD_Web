@@ -28,15 +28,33 @@
 
     <section id="search">
 
-        <section id="filter_buttons">
-            <button>
-                Sorteren
-                <img src="images/icons/arrow-down-red.svg">
-            </button>
+        <section id="filter_toggle">
+            <form>
+                <fieldset>
+                    <legend>Leesduur</legend>
+                    <input type="button" name="5 minuten" value="5 min">
+                    <input type="button" name="10 minuten" value="10 min">
+                    <input type="button" name="15 minuten" value="15 min">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Categorieën</legend>
+                    <input type="button" name="Spannend" value="Spannend">
+                    <input type="button" name="Romantisch" value="Romantisch">
+                    <input type="button" name="Grappig" value="Grappig">
+                    <input type="button" name="Fantasie" value="Fantasie">
+                    <input type="button" name="Oorlog" value="Oorlog">
+                    <input type="button" name="Biografie" value="Biografie">
+                </fieldset>
+
+                <input type="submit" name="Bevestigen" value="Bevestig">
+            </form>
+<!--
             <button>
                 <img src="images/icons/filter.svg">
                 Filter
             </button>
+-->
         </section>
 
         <section id="recommended-article-container">

@@ -559,14 +559,51 @@ section#zero>nav>ul>a>li>img {
     right: 1em;
 }
 
-section#filter_buttons{
+section#filter_toggle {
     margin: 0 1em;
-    height: 2.5em;
-    display: flex;
-    justify-content: space-between;
+    min-height: 2.5em;
 }
 
-section#filter_buttons>button {
+section#filter_toggle>form {
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+section#filter_toggle>form>fieldset {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2em 2em;
+    grid-column-gap: 1em;
+    grid-row-gap: 0.8em;
+}
+
+section#filter_toggle>form>fieldset:first-of-type {
+    padding-bottom: 0;
+}
+
+section#filter_toggle>form>fieldset:first-of-type>legend {
+    margin-top: 2em;
+}
+
+section#filter_toggle>form>fieldset:last-of-type {
+    margin-bottom: 1em;
+    padding-top: 0;
+}
+
+section#filter_toggle>form>fieldset:last-of-type>legend {
+    padding-bottom: 0.5em;
+}
+
+
+section#filter_toggle>form>fieldset>input {
+    background: #EBEBEC;
+    border: none;
+    border-radius: 4px;
+}
+
+
+section#filter_toggle>button {
     height: 100%;
     width: 28vw;
     display: flex;
@@ -579,11 +616,11 @@ section#filter_buttons>button {
     transition: background-color 0.5s ease;
 }
 
- section#filter_buttons>button:hover {
+ section#filter_toggle>button:hover {
     background-color: #d8f3ff;
 }
 
-section#filter_buttons>button>img {
+section#filter_toggle>button>img {
     height: 50%;
     margin-top: 0.8em;
 }
@@ -951,7 +988,7 @@ section#filter_buttons>button>img {
 
 }
 
-@media (min-width: 1224px) {
+@media (min-width:  1224px) {
 
     section#text-column-container {
         -webkit-columns: 2 35vw;
