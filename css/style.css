@@ -562,11 +562,37 @@ section#zero>nav>ul>a>li>img {
 section#filter_toggle {
     margin: 0 1em;
     min-height: 2.5em;
+    display: flex;
+    justify-content: flex-end;
 }
 
 section#filter_toggle>form {
     background-color: #fff;
     border-radius: 4px;
+    width: 100vw;
+}
+
+section#filter_toggle>form>header {
+    height: 2.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#filter_toggle>form>header>img {
+    height: 50%;
+    margin: 0.5em 1em;
+}
+
+section#filter_toggle>form>header>button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: 1.5em;
+    margin: 0 1em;
+    padding: 0;
+    cursor: pointer;
+}
+
+section#filter_toggle>form>header>button:focus {
 }
 
 section#filter_toggle>form>fieldset {
@@ -583,7 +609,7 @@ section#filter_toggle>form>fieldset:first-of-type {
 }
 
 section#filter_toggle>form>fieldset:first-of-type>legend {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 section#filter_toggle>form>fieldset:last-of-type {
@@ -600,19 +626,65 @@ section#filter_toggle>form>fieldset>input {
     background: #EBEBEC;
     border: none;
     border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+section#filter_toggle>form>fieldset>input:focus {
+    background-color: #d8f3ff;
+}
+
+section#filter_toggle>form>fieldset>input:hover {
+    background-color: #d8f3ff;
+}
+
+section#filter_toggle>form>fieldset>input:active {
+    background-color: #ED1A2D;
+}
+
+section#filter_toggle>form>footer {
+    text-align: center;
+}
+
+section#filter_toggle>form>footer>input {
+    height: 3.1em;
+    width: 60vw;
+    margin: 1em 0 2em 0;
+    background-color: #094D83;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    color: #fff;
+}
+
+section#filter_toggle>form>footer>input:focus {
+    background-color: #ED1A2D;
+}
+
+section#filter_toggle>form>footer>input:hover {
+    background-color: #ED1A2D;
+}
+
+section#filter_toggle>form>footer>input:active {
+    background-color: #ba1827;
 }
 
 
 section#filter_toggle>button {
+    display: flex;
     height: 100%;
     width: 28vw;
-    display: flex;
     justify-content: space-around;
     border: none;
     background-color: #fff;
     border-radius: 4px;
     line-height: 3.1em;
     font-size: 0.8em;
+    right: 1em;
+    cursor: pointer;
     transition: background-color 0.5s ease;
 }
 
@@ -620,10 +692,25 @@ section#filter_toggle>button {
     background-color: #d8f3ff;
 }
 
+ section#filter_toggle>button:focus {
+    background-color: #d8f3ff;
+}
+
+
 section#filter_toggle>button>img {
-    height: 50%;
+    height: 1.6em;
     margin-top: 0.8em;
 }
+
+.active_input_button {
+    background-color: #094D83 !important;
+    color: #fff;
+}
+
+.hide {
+    display: none !important;
+}
+
 
 /*start media queries*/
 @media (min-width: 600px) {

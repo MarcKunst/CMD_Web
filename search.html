@@ -29,33 +29,41 @@
     <section id="search">
 
         <section id="filter_toggle">
-            <form>
+            <form class="hide">
+                <header>
+                    <img src="images/icons/filter.svg">
+                    <button onclick="filterClose()">
+                        <img src="images/icons/cross.svg">
+                    </button>
+                </header>
                 <fieldset>
                     <legend>Leesduur</legend>
-                    <input type="button" name="5 minuten" value="5 min">
-                    <input type="button" name="10 minuten" value="10 min">
-                    <input type="button" name="15 minuten" value="15 min">
+                    <input type="button" name="1" value="5 min" onclick="selectFilter()">
+                    <input type="button" name="2" value="10 min" onclick="selectFilter2()">
+                    <input type="button" name="3" value="15 min" onclick="selectFilter3()">
                 </fieldset>
 
                 <fieldset>
                     <legend>Categorieën</legend>
-                    <input type="button" name="Spannend" value="Spannend">
-                    <input type="button" name="Romantisch" value="Romantisch">
-                    <input type="button" name="Grappig" value="Grappig">
-                    <input type="button" name="Fantasie" value="Fantasie">
-                    <input type="button" name="Oorlog" value="Oorlog">
-                    <input type="button" name="Biografie" value="Biografie">
+                    <input type="button" name="4" value="Spannend" onclick="selectFilter4()">
+                    <input type="button" name="5" value="Romantisch" onclick="selectFilter5()">
+                    <input type="button" name="6" value="Grappig" onclick="selectFilter6()">
+                    <input type="button" name="7" value="Fantasie" onclick="selectFilter7()">
+                    <input type="button" name="8" value="Oorlog" onclick="selectFilter8()">
+                    <input type="button" name="9" value="Biografie" onclick="selectFilter9()">
                 </fieldset>
 
-                <input type="submit" name="Bevestigen" value="Bevestig">
+                <footer>
+                    <input type="submit" name="Bevestigen" value="Bevestig">
+                </footer>
             </form>
-<!--
-            <button>
+
+            <button id="filter-open-btn" onclick="filterOpen()">
                 <img src="images/icons/filter.svg">
                 Filter
             </button>
--->
         </section>
+
 
         <section id="recommended-article-container">
             <article class="article-thumb">
@@ -247,5 +255,7 @@
             </a>
         </ul>
     </nav>
+
+    <script src="js/style.js"></script>
 </body>
 </html>
