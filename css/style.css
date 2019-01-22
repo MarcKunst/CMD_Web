@@ -152,12 +152,16 @@ header#main-header {
 
 header#main-header>a {
     margin: 0;
-    height: 50px;
+    height: 3.1em;
     position: fixed;
     left: 50%;
     transform: translate(-50%);
     padding: 0 auto;
     background-color: #fff;
+}
+
+header#main-header>a:focus {
+
 }
 
 header#main-header>a>img {
@@ -181,6 +185,9 @@ header#main-header>button {
 }
 
 header#main-header>button:hover {
+    height: 2.7em;
+}
+header#main-header>button:focus {
     height: 2.7em;
 }
 
@@ -236,6 +243,10 @@ section#surprise>a {
     text-align: left;
     transition: background-color 0.5s ease;
     box-sizing: border-box;
+}
+
+section#surprise>a:focus {
+    background-color: #d8f3ff;
 }
 
 section#surprise>a>img {
@@ -298,6 +309,10 @@ article#daily-article>header>button:hover {
     background-color: #d8f3ff;
 }
 
+article#daily-article>header>button:focus {
+    background-color: #d8f3ff;
+}
+
 article#daily-article>header>button>img {
     width: 80%;
 }
@@ -342,6 +357,10 @@ article.article-thumb:hover {
   box-shadow: 0 5px 10px rgba(57, 57, 57, 0.25), 0 5px 5px rgba(67, 67, 67, 0.22);
 }
 
+article.article-thumb:focus {
+  box-shadow: 0 5px 10px rgba(57, 57, 57, 0.25), 0 5px 5px rgba(67, 67, 67, 0.22);
+}
+
 article.article-thumb>header {
     height: 55%;
     border-radius: 4px 4px 0 0;
@@ -370,6 +389,10 @@ article.article-thumb>header>button {
 }
 
 article.article-thumb>header>button:hover {
+    background-color: #d8f3ff;
+}
+
+article.article-thumb>header>button:focus {
     background-color: #d8f3ff;
 }
 
@@ -438,6 +461,10 @@ nav#main-nav>ul>a {
     font-size: 0.9em;
     width: 50vw;
     transition: background-color 0.5s ease;
+}
+
+nav#main-nav>ul>a:focus{
+
 }
 
 nav#main-nav>ul>a>li {
@@ -1058,11 +1085,8 @@ section#filter_toggle>button>img {
         width: 50%;
     }
 
-    section#filter_buttons{
-    margin: 1em 2em 0;
-    }
 
-    section#filter_buttons>button{
+    section#filter_toggle>button{
         width: 15vw
     }
 
@@ -1072,10 +1096,20 @@ section#filter_toggle>button>img {
 
     main {
     background-image: url(../images/white-bg-ipad.png);
+    }
+
+    section#filter_toggle {
+    margin: 0 2em;
+    }
+
+    section#filter_toggle>form>footer>input {
+        width: 35vw;
+    }
 
 }
 
 @media (min-width:  1224px) {
+
 
     section#text-column-container {
         -webkit-columns: 2 35vw;
@@ -1358,4 +1392,17 @@ section#filter_toggle>button>img {
 
     main {
     background-image: url(../images/white-bg-img.png);
+    }
+
+    section#filter_toggle>button{
+        width: 10vw
+    }
+
+    section#filter_toggle>form {
+        width: 100vw;
+    }
+
+    section#filter_toggle>form>footer>input {
+        width: 20vw;
+    }
 }
